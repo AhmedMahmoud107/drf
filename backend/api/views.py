@@ -81,7 +81,7 @@ def api_home(request, *args, **kwargs):
 
     serializer = ProductSerializer(data=request.data)
 
-    if serializer.is_valid(raise_exception=True): # rasie_exeptio to make the clien know that he is messing up
+    if serializer.is_valid(raise_exception=True): # rasie_exeption to make the client know that he is messing up
 
 
         print(serializer.data)
